@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Error</title>
+	<link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+	{{include './art_header.html'}}
+	<div class="main_body">
+		<div class="content">
+			<h1>Error occurs ... Please make sure you input the right url.</h1>
+			<h2>&nbsp;</h2>
+			<h2>{{if errorMessage}}{{errorMessage}}{{/if}}</h2>
+		</div>
+	</div>
+</body>
+
+</html>
