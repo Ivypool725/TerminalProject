@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <h1>Students Information</h1>
+    <table>
+        <tr><td>ID</td><td>Name</td><td>Sex</td><td>Age</td></tr>
+        {{each stu-arr row}}
+        <tr>
+            <td><a href='/scorebystudent/{{row.id}}'>{{row.id}}</a></td>
+            <td>{{row.name}}</td>
+            <td>{{row.sex}}</td>
+            <td>{{row.age}}</td>
+        </tr>
+        {{/each}}
+    </table>
+
+
+</BODY>
+</HTML>
